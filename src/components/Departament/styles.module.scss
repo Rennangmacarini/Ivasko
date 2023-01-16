@@ -1,0 +1,10 @@
+.global {
+    padding: 10rem 0rem;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+}
