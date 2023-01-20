@@ -9,8 +9,8 @@ export function Footer() {
         <img src="/images/logo.png" alt="" />
       </div>
       <div className={styles.content}>
-        <a>Sobre nós</a>
-        <a>Nossas lojas</a>
+        <Link href={"/about"} target={"_blank"}>Sobre nós</Link>
+        <Link href={"/stores"} target={"_blank"}>Nossas lojas</Link>
         <a>Sobre cookies</a>
         <a>DPO</a>
       </div>

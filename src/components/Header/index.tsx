@@ -3,7 +3,6 @@ import { useState } from "react";
 import styles from "./styles.module.scss";
 
 export function Header() {
-
   const [openMenu, setOpenMenu] = useState(false);
 
   /*
@@ -28,18 +27,37 @@ export function Header() {
     setOpenMenu(!openMenu);
   };
 
+  const [openMouse, setOpenMouse] = useState(false);
+
+  const handleMouse = () => {
+    setOpenMouse(!openMouse);
+  };
+
   return (
     <header>
       <div className={styles.header}>
-      <img className={styles.logo} src="/images/logo.png" alt="Logo ivasko" />
-        <span onClick={handleOpen}> <img className={styles.buttonMobile}  src={openMenu ? "./images/close.png" : "./icon/menu.png"} alt="" />
+        <img className={styles.logo} src="/images/logo.png" alt="Logo ivasko" />
+        <span onClick={handleOpen}>
+          <img
+            className={styles.buttonMobile}
+            src={openMenu ? "./icon/close.png" : "./icon/menu.png"}
+            alt=""
+          />
         </span>
         <div className={styles.menu}>
           <Link href={"/"}>Início</Link>
           <Link href={"/about"}>Quem Somos</Link>
           <Link href={"/stores"}>Lojas</Link>
           <Link href={"/books"}>Livro de Receitas</Link>
-          <Link href={"/departaments"}>Departamento</Link>
+          <span className={styles.test}>
+            <Link href={"/"}>
+              Área gourmet <img src={"/icon/seta.png"} alt="" />{" "}
+            </Link>
+            <span className={styles.teste}>
+              <Link href={"/butchers"}>Açougue</Link>
+              <Link href={"/bakers"}>Padaria</Link>
+            </span>
+          </span>
           <Link
             href="https://app.skeel.com.br/ivasko"
             target={"_blank"}
@@ -47,11 +65,13 @@ export function Header() {
           >
             Trabalhe Conosco
           </Link>
-          <Link 
-          href="https://meucartao.senff.com.br/ivasko/bem-vindo"
-          target={"_blank"}
-          rel="noreferrer"
-          >CARTÃO IVASKO</Link>
+          <Link
+            href="https://meucartao.senff.com.br/ivasko/bem-vindo"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            CARTÃO IVASKO
+          </Link>
         </div>
         <div className={styles.icon}>
           <div>
@@ -86,37 +106,42 @@ export function Header() {
         </div>
       </div>
 
-      {
-        openMenu && (
-         <div className={styles.menuContainer}>
-         <div className={styles.menuMobile}>
-         <div className={styles.contentMenu}>
-          <Link href={"/"}>Início</Link>
-          <Link href={"/about"}>Quem Somos</Link>
-          <Link href={"/stores"}>Lojas</Link>
-          <Link href={"/books"}>Livro de Receitas</Link>
-          <Link href="/">Delivery</Link>
-          <Link
-            href="https://app.skeel.com.br/ivasko"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            Trabalhe Conosco
-          </Link>
-          <Link
-            href="https://meucartao.senff.com.br/ivasko/bem-vindo"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            CARTÃO IVASKO
-          </Link>
+      {openMenu && (
+        <div className={styles.menuContainer}>
+          <div className={styles.menuMobile}>
+            <div className={styles.contentMenu}>
+              <Link href={"/"}>Início</Link>
+              <Link href={"/about"}>Quem Somos</Link>
+              <Link href={"/stores"}>Lojas</Link>
+              <Link href={"/books"}>Livro de Receitas</Link>
+              <Link href="/departaments">Área gourmet</Link>
+              <span className={styles.test}>
+                <Link href={"/"}>
+                  Área gourmet
+                </Link>
+                <span className={styles.teste}>
+                  <Link href={"/butchers"}>Açougue</Link>
+                  <Link href={"/bakers"}>Padaria</Link>
+                </span>
+              </span>
+              <Link
+                href="https://app.skeel.com.br/ivasko"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                Trabalhe Conosco
+              </Link>
+              <Link
+                href="https://meucartao.senff.com.br/ivasko/bem-vindo"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                CARTÃO IVASKO
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-        )
-      }
-
-
+      )}
     </header>
   );
 }

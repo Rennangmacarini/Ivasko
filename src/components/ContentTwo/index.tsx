@@ -21,10 +21,6 @@ export function ContentTwo({ contenttwo }: PostProps) {
         </div>
         ))}
       </div>
-
-
-      <a href="https://online.flippingbook.com/view/499716801/">Sem título-2</a>
-
     </main>
   );
 }
