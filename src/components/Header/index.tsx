@@ -114,7 +114,6 @@ export function Header() {
               <Link href={"/about"}>Quem Somos</Link>
               <Link href={"/stores"}>Lojas</Link>
               <Link href={"/books"}>Livro de Receitas</Link>
-              <Link href="/departaments">Área gourmet</Link>
               <span className={styles.test}>
                 <Link href={"/"}>
                   Área gourmet
