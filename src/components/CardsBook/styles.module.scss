@@ -118,19 +118,17 @@
         left: 0;
 
 
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.8);
 
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-
-
     }
 
     .modalContainer {
         position: fixed;
-        top: calc(50% - 210px);
+        top: calc(50% - 230px);
         left: calc(50% - 260px);
 
         display: flex;
@@ -138,19 +136,29 @@
         justify-content: center;
 
         .modalContent {
-            display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             background-color: aliceblue;
             border-radius: 6px;
             border: 1px solid #ccc;
-            width: 520px;
-            height: 420px;
-        }
-    }
+            padding: 1rem;
 
+            width: 525px;
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+    }
 }
+
+
+
 
 @media(max-width: 1200px) {
     .content {
@@ -180,11 +188,11 @@
         h2 {
             font-size: 2rem;
         }
-    
+
         p {
             font-size: 1rem;
         }
-    
+
         .cards {
             grid-template-columns: repeat(2, 280px);
             gap: 1rem;
@@ -227,6 +235,13 @@
             }
         }
 
+        .modalContainer {
+            left: calc(50% - 190px);
+            .modalContent{
+                width: 380px;
+            }
+        }
+
     }
 }
 
@@ -237,6 +252,7 @@
         .cards {
             gap: 2rem;
             grid-template-columns: repeat(2, 180px);
+
             .card {
                 margin: 0 auto;
                 width: 180px;
@@ -250,6 +266,7 @@
                     padding: 0.5rem;
                     font-size: 0.8rem;
                 }
+
                 img {
                     width: 180px;
                     height: 200px;
@@ -284,6 +301,7 @@
         .cards {
             gap: 2rem;
             grid-template-columns: repeat(2, 150px);
+
             .card {
                 margin: 0 auto;
                 width: 150px;
@@ -297,10 +315,18 @@
                     padding: 0.5rem;
                     font-size: 0.7rem;
                 }
+
                 img {
                     width: 150px;
                     height: 180px;
                 }
+            }
+        }
+
+        .modalContainer {
+            left: calc(50% - 171px);
+            .modalContent{
+                width: 350px;
             }
         }
     }
