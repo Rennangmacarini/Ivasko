@@ -1,4 +1,6 @@
 
+
+import Link from "next/link";
 import styles from "./styles.module.scss";
 
 
@@ -39,7 +41,7 @@ export function ContentThree({ contentthree }: PostProps) {
               toda a história começou. Depois disso, vieram muitas histórias,
               gente luta.
             </p>
-            <a href="">Conheça mais um pouco da nossa história.</a>
+            <Link href="./about">Conheça mais um pouco da nossa história.</Link>
           </div>
           <div className={styles.contentImgThree}>
             <img src="/images/textura.png" alt="" />
