@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { CookieConsent } from 'react-cookie-consent';
 import styles from './styles.module.scss'
 
@@ -15,7 +16,7 @@ export function Cookies() {
           Salvamos dados da sua visita para melhorar a sua experiência de
           navegação e mostrar ofertas que combinam com você, além da otimização
           do desempenho e segurança do site. você pode configurar suas
-          preferências e conferir nossa <a href="">política de privacidade.</a>
+          preferências e conferir nossa <Link href={"/about"}>política de privacidade.</Link>
         </h1>
       </div>
     </CookieConsent>
