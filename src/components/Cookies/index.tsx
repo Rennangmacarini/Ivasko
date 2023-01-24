@@ -1,4 +1,4 @@
-import { CookieConsent } from "react-cookie-consent";
+import { CookieConsent } from 'react-cookie-consent';
 import styles from './styles.module.scss'
 
 export function Cookies() {
