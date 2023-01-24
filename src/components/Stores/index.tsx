@@ -10,11 +10,23 @@ type Posts = {
 
   contactone: string;
   saturdayone: string;
-  sundayone:string;
+  sundayone: string;
 
-  contacttwo:string;
+  contacttwo: string;
   saturdaytwo: string;
-  sundaytwo:string;
+  sundaytwo: string;
+
+  contactthree: string;
+  saturdaythree: string;
+  sundaythree: string;
+
+  contactfour: string;
+  saturdayfour: string;
+  sundayfour: string;
+
+  contactfive: string;
+  saturdayfive: string;
+  sundayfive: string;
 };
 
 interface PostProps {
@@ -39,22 +51,22 @@ export function Store({ store }: PostProps) {
         ))}
 
         <div>
-        {store.map((post) => (
-        <div key={post.id} className={styles.text}>
-          <h3>OPÇÕES DE SERVIÇOS:</h3>
-          <p>Compras na loja - Retirada na loja - Entrega</p>
-          <h3>CONTATO</h3>
-          <p>
-            <strong>{post.contactone}</strong>
-          </p>
-          <h3>ENDEREÇO:</h3>
-          <p>Av. Dr. Vicente Machado, 1166 - Irati, PR, 84500-000.</p>
-          <h3>HORÁRIO DE ATENDIMENTO:</h3>
-          <p>{post.saturdayone}</p>
-          <p>{post.sundayone}</p>
-        </div> 
-      ))}
-      </div>
+          {store.map((post) => (
+            <div key={post.id} className={styles.text}>
+              <h3>OPÇÕES DE SERVIÇOS:</h3>
+              <p>Compras na loja - Retirada na loja - Entrega</p>
+              <h3>CONTATO</h3>
+              <p>
+                <strong>{post.contactone}</strong>
+              </p>
+              <h3>ENDEREÇO:</h3>
+              <p>Av. Dr. Vicente Machado, 1166 - Irati, PR, 84500-000.</p>
+              <h3>HORÁRIO DE ATENDIMENTO:</h3>
+              <p>{post.saturdayone}</p>
+              <p>{post.sundayone}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className={styles.content}>
@@ -67,24 +79,25 @@ export function Store({ store }: PostProps) {
           </div>
         ))}
 
-        <div> 
-        {store.map((post) => (
-        <div key={post.id} className={styles.text}>
-          <h3>OPÇÕES DE SERVIÇOS:</h3>
-          <p>Compras na loja - Retirada na loja - Entrega - Restaurante</p>
-          <h3>CONTATO</h3>
-          <p>
-            <strong>{post.contacttwo}</strong>
-          </p>
-          <h3>ENDEREÇO:</h3>
-          <p>R. Dezenove de Dezembro, 681 - Irati, PR, 84500-016.</p>
-          <h3>HORÁRIO DE ATENDIMENTO:</h3>
-          <p>{post.saturdaytwo}</p>
-          <p>{post.sundaytwo}</p>
-        </div>
-        ))}
+        <div>
+          {store.map((post) => (
+            <div key={post.id} className={styles.text}>
+              <h3>OPÇÕES DE SERVIÇOS:</h3>
+              <p>Compras na loja - Retirada na loja - Entrega - Restaurante</p>
+              <h3>CONTATO</h3>
+              <p>
+                <strong>{post.contacttwo}</strong>
+              </p>
+              <h3>ENDEREÇO:</h3>
+              <p>R. Dezenove de Dezembro, 681 - Irati, PR, 84500-016.</p>
+              <h3>HORÁRIO DE ATENDIMENTO:</h3>
+              <p>{post.saturdaytwo}</p>
+              <p>{post.sundaytwo}</p>
+            </div>
+          ))}
         </div>
       </div>
+
       <div className={styles.content}>
         {store.map((post) => (
           <div key={post.id} className={styles.cards}>
@@ -94,21 +107,26 @@ export function Store({ store }: PostProps) {
             <img src={post.three} alt="" />
           </div>
         ))}
-        <div className={styles.text}>
-          <h3>OPÇÕES DE SERVIÇOS:</h3>
-          <p>
-            Compras na loja - Retirada na loja - Entrega - Restaurante - Espaço
-            Gourmet
-          </p>
-          <h3>CONTATO</h3>
-          <p>
-            <strong>(42) 3422-3030</strong>
-          </p>
-          <h3>ENDEREÇO:</h3>
-          <p>Rua Dona Noca, 707 - Irati, PR, 84500-000.</p>
-          <h3>HORÁRIO DE ATENDIMENTO:</h3>
-          <p>SEGUNDA - SÁBADO: 08:30 - 21:00.</p>
-          <p>DOMINGO - 09:00 - 20:00</p>
+
+        <div>
+          {store.map((post) => (
+            <div key={post.id} className={styles.text}>
+              <h3>OPÇÕES DE SERVIÇOS:</h3>
+              <p>
+                Compras na loja - Retirada na loja - Entrega - Restaurante -
+                Espaço Gourmet
+              </p>
+              <h3>CONTATO</h3>
+              <p>
+                <strong>{post.contactthree}</strong>
+              </p>
+              <h3>ENDEREÇO:</h3>
+              <p>Rua Dona Noca, 707 - Irati, PR, 84500-000.</p>
+              <h3>HORÁRIO DE ATENDIMENTO:</h3>
+              <p>{post.saturdaythree}</p>
+              <p>{post.sundaythree}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -121,18 +139,22 @@ export function Store({ store }: PostProps) {
             <img src={post.four} alt="" />
           </div>
         ))}
-        <div className={styles.text}>
-          <h3>OPÇÕES DE SERVIÇOS:</h3>
-          <p>Compras na loja - Retirada na loja - Entrega</p>
-          <h3>CONTATO</h3>
-          <p>
-            <strong>(42) 3422-8400</strong>
-          </p>
-          <h3>ENDEREÇO:</h3>
-          <p>R. Pres. Getúlio Vargas - Irati, PR, 84500-000.</p>
-          <h3>HORÁRIO DE ATENDIMENTO:</h3>
-          <p>SEGUNDA - SÁBADO: 08:00 - 20:00.</p>
-          <p>DOMINGO - FECHADO</p>
+        <div>
+          {store.map((post) => (
+            <div key={post.id} className={styles.text}>
+              <h3>OPÇÕES DE SERVIÇOS:</h3>
+              <p>Compras na loja - Retirada na loja - Entrega</p>
+              <h3>CONTATO</h3>
+              <p>
+                <strong>{post.contactfour}</strong>
+              </p>
+              <h3>ENDEREÇO:</h3>
+              <p>R. Pres. Getúlio Vargas - Irati, PR, 84500-000.</p>
+              <h3>HORÁRIO DE ATENDIMENTO:</h3>
+              <p>{post.saturdayfour}</p>
+              <p>{post.sundayfour}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -145,21 +167,26 @@ export function Store({ store }: PostProps) {
             <img src={post.five} alt="" />
           </div>
         ))}
-        <div className={styles.text}>
-          <h3>OPÇÕES DE SERVIÇOS:</h3>
-          <p>Compras na loja - Retirada na loja - Entrega</p>
-          <h3>CONTATO</h3>
-          <p>
-            <strong>(42) 3532-2298</strong>
-          </p>
-          <h3>ENDEREÇO:</h3>
-          <p>
-            R. Barão do Rio Branco, 661 - Centro São Mateus do Sul - PR,
-            83900-000
-          </p>
-          <h3>HORÁRIO DE ATENDIMENTO:</h3>
-          <p>SEGUNDA - SÁBADO: 08:00 - 20:00.</p>
-          <p>DOMINGO - FECHADO</p>
+
+        <div>
+          {store.map((post) => (
+            <div key={post.id} className={styles.text}>
+              <h3>OPÇÕES DE SERVIÇOS:</h3>
+              <p>Compras na loja - Retirada na loja - Entrega</p>
+              <h3>CONTATO</h3>
+              <p>
+                <strong>{post.contactfive}</strong>
+              </p>
+              <h3>ENDEREÇO:</h3>
+              <p>
+                R. Barão do Rio Branco, 661 - Centro São Mateus do Sul - PR,
+                83900-000
+              </p>
+              <h3>HORÁRIO DE ATENDIMENTO:</h3>
+              <p>{post.saturdayfive}</p>
+              <p>{post.sundayfive}</p>
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -1,80 +1,110 @@
-
-
 .global {
-    display: flex;
-    justify-content: center;
-    align-content: center;
     margin: 0 auto;
-    width: 800px;
-    padding-bottom: 5rem;
-    .carousel {
+    width: 1000px;
+    cursor: pointer;
+    font-family: 'Exo 2' !important;
+    color: var(--white);
+
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 2.5rem;
+        font-weight: 300;
+        
+        background-color: var(--gray-900);
+        width: 300px;
+        padding: 1rem 0rem;
+        border-radius: 4px;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: minhaFonte !important;
+        color: var(--gray-850);
+        font-size: 5rem;
+        font-weight: 400;
+        margin-top: -1.5rem;
+    }
+
+    p {
+        margin: 0 auto;
+        width: 100px;
+        border-bottom: 2px solid var(--white);
+        margin-top: -0.5rem;
+    }
+
+    img {
+        width: 1000px;
+        margin: 2rem 0;
+    }
+}
+
+@media(max-width: 1200px){
+    .global {
+        width: 800px;
+        img {
+            width: 800px;
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .global {
+        width: 700px;
         img {
             width: 700px;
-            height: 700px;
         }
-    }  
-}
-
-@media(max-width: 1700px){
-    .global {
-        width: 600px;
-        .carousel {
-            img {
-                width: 600px;
-                height: 600px;
-            }
-        }  
     }
 }
-
-@media(max-width: 1500px){
-    .global {
-        width: 550px;
-        .carousel {
-            img {
-                width: 550px;
-                height: 550px;
-            }
-        }  
-    }
-}
-
-@media(max-width: 1000px){
-    .global {
-        width: 600px;
-        .carousel {
-            img {
-                width: 600px;
-                height: 650px;
-            }
-        }
-        
-    }
-}
-
 
 @media(max-width: 700px){
     .global {
-        width: 500px;
-        .carousel {
-            img {
-                width: 500px;
-                height: 500px;
-            }
+        width: 600px;
+        img {
+            width: 600px;
         }
-        
+    }
+}
+
+
+@media(max-width: 600px){
+    .global {
+        width: 500px;
+
+        h2 {
+            margin-top: -0.5rem;
+            line-height: 3rem;
+        }
+        img {
+            width: 500px;
+        }
     }
 }
 
 @media(max-width: 500px){
     .global {
-        width: 380px;
-        .carousel {
-            img {
-                width: 380px;
-                height: 420px;
-            }
+        width: 450px;
+        img {
+            width: 450px;
         }
-        
     }
 }
+
+@media(max-width: 450px){
+    .global {
+        width: 400px;
+        img {
+            width: 400px;
+        }
+    }
+}
+
+@media(max-width: 400px){
+    .global {
+        width: 380px;
+        img {
+            width: 380px;
+        }
+    }
+}
+

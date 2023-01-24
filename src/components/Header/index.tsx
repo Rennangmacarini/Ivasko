@@ -27,11 +27,6 @@ export function Header() {
     setOpenMenu(!openMenu);
   };
 
-  const [openMouse, setOpenMouse] = useState(false);
-
-  const handleMouse = () => {
-    setOpenMouse(!openMouse);
-  };
 
   return (
     <header>

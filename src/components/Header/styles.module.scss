@@ -49,7 +49,7 @@
         
 
         .test:hover .teste {
-            background-color: var(--gray-80);
+            background-color: var(--gray-500);
             padding: 1.1rem;
             display: block;
             border-bottom-right-radius: 18px;
@@ -58,8 +58,9 @@
             a:hover {
                text-align: center;
                transition: 0.2s all;
-               background-color: var(--gray-100);
+               background-color: var(--gray-50);
                border-radius: 8px;
+               color: var(--gray-500);
             }
         }
 

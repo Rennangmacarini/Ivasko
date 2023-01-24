@@ -12,7 +12,13 @@ type Posts = {
     two: string;
     three: string;
     four: string;
-    five: string
+    five: string;
+
+    textone: string;
+    texttwo: string;
+    textthree: string;
+    textfour: string;
+    textfive: string
   }
   
   interface PostProps{
@@ -36,7 +42,8 @@ export const getStaticProps: GetStaticProps = async () => {
     const response = await prismic.query(
     [Prismic.predicates.at('document.type', 'history')],
     {
-      fetch: ['history.content', 'history.one', 'history.two', 'history.three', 'history.four', 'history.five'],
+      fetch: ['history.content', 'history.one', 'history.two', 'history.three', 'history.four', 'history.five',
+      'history.textone', 'history.texttwo', 'history.textthree', 'history.textfour', 'history.textfive'],
     })
      
     const posts = response.results.map(post => {
@@ -49,6 +56,12 @@ export const getStaticProps: GetStaticProps = async () => {
         three:post.data.three.url,
         four:post.data.four.url,
         five:post.data.five.url,
+
+        textone:post.data.textone[0].text,
+        texttwo:post.data.textone[0].text,
+        textthree:post.data.textone[0].text,
+        textfour:post.data.textone[0].text,
+        textfive:post.data.textone[0].text
       };
     });
        return{
