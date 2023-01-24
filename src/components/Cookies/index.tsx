@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { CookieConsent } from 'react-cookie-consent';
 import styles from './styles.module.scss'
 
-export function Cookies() {
+export function Cookie() {
   return (
     <CookieConsent 
     debug={true}

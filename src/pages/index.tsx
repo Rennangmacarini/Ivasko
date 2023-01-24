@@ -7,11 +7,11 @@ import { Video } from "../components/filme"
 import { Footer } from "../components/footer"
 import { Header } from "../components/Header"
 
-import { GetStaticProps } from "next";
-import { getPrismicClient } from "../services/prismic";
-import Prismic from "@prismicio/client";
-import { Encarte } from "../components/Encarte"
-import { Cookies } from "../components/Cookies"
+import { GetStaticProps } from "next"
+import { getPrismicClient } from "../services/prismic"
+import Prismic from "@prismicio/client"
+import { Encartes } from "../components/Encarte"
+import { Cookie } from "../components/Cookies"
 
 type Posts = {
   id: string;
@@ -37,8 +37,8 @@ export default function Home({posts} : PostProps){
     <ContentTwo contenttwo={posts}/>
     <ContentThree contentthree={posts}/>
     <Video/>
-    <Encarte/>
-    <Cookies/>
+    <Encartes/>
+    <Cookie/>
     <Footer/>
     </>
   )
