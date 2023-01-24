@@ -10,7 +10,6 @@ import { Header } from "../components/Header"
 import { GetStaticProps } from "next"
 import { getPrismicClient } from "../services/prismic"
 import Prismic from "@prismicio/client"
-import { Encartes } from "../components/Encarte"
 import { Cookie } from "../components/Cookies"
 
 type Posts = {
@@ -37,7 +36,6 @@ export default function Home({posts} : PostProps){
     <ContentTwo contenttwo={posts}/>
     <ContentThree contentthree={posts}/>
     <Video/>
-    <Encartes/>
     <Cookie/>
     <Footer/>
     </>
