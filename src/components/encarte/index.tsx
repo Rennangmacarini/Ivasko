@@ -3,13 +3,12 @@ import "keen-slider/keen-slider.min.css";
 import styles from "./styles.module.scss";
 import { useKeenSlider, TrackDetails } from "keen-slider/react";
 
-const images = [
-  "images/encarte.png",
-  "images/encarte.png",
-  "images/encarte.png",
-];
-
 export function Ofertas() {
+  const images = [
+    "images/encarte.png",
+    "images/encarte.png",
+    "images/encarte.png",
+  ];
   const [details, setDetails] = React.useState<TrackDetails | null>(null);
 
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
