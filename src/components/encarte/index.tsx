@@ -9,7 +9,7 @@ const images = [
   "images/encarte.png",
 ];
 
-export function Encartes() {
+export function Ofertas() {
   const [details, setDetails] = React.useState<TrackDetails | null>(null);
 
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
