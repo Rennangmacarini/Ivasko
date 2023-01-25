@@ -96,7 +96,7 @@ export function Story({ story }: PostProps) {
             <h1>
               <span>|</span>Expansão
             </h1>
-            <p>{post.five}</p>
+            <p>{post.textfive}</p>
           </div>
         ))}
         {story.map((post) => (
