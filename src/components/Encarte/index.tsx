@@ -4,7 +4,10 @@ import "keen-slider/keen-slider.min.css";
 import styles from './styles.module.scss'
 
 export function Ofertas() {
-  const [ref] = useKeenSlider<HTMLDivElement>();
+  const [ref] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+  });
+
   return (
     <div className={styles.carousel}>
         <h1>OFERTAS</h1>
