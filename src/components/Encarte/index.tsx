@@ -7,6 +7,9 @@ export function Ofertas() {
   const [ref] = useKeenSlider<HTMLDivElement>();
   return (
     <div className={styles.carousel}>
+        <h1>OFERTAS</h1>
+        <p></p>
+        <h2>Preço muito mais barato no Ivasko</h2>
       <div ref={ref} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
           <img src={"./images/encarte.png"} alt="" />

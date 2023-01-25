@@ -1,10 +1,115 @@
 .carousel {
     margin: 0 auto;
     width: 1000px;
+    text-align: center;
+    font-family: 'Exo 2' !important;
+
+    h1{
+        margin: 0 auto;
+        background-color: var(--gray-900);
+        padding: 1rem 0.5rem;
+        width: 250px;
+        font-size: 3rem;
+        color: var(--white);
+
+        border-radius: 4px;
+    }
+
+    p{
+        
+        margin: 0 auto;
+        margin-top: -1rem;
+        width: 150px;
+        border-bottom: 2px solid var(--white);
+    }
+
+    h2{
+        font-size: 5rem;
+        font-weight: 100;
+        color: var(--gray-850);
+        font-family: minhaFonte !important;
+        margin-top: -0.5rem;
+    }
 
     img{
         margin: 2rem 0rem;
         cursor: pointer;
         width: 1000px;
+    }
+}
+
+@media(max-width: 1200px){
+    .carousel{
+        width: 800px;
+        img{
+            width: 800px;
+        }
+    }
+}
+
+
+@media(max-width: 800px){
+    .carousel{
+        width: 700px;
+
+        h2{
+            line-height: 3.5rem;
+        }
+        img{
+            width: 700px;
+        }
+    }
+}
+
+@media(max-width: 700px){
+    .carousel{
+        width: 600px;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        img{
+            width: 600px;
+        }
+    }
+}
+
+
+@media(max-width: 600px){
+    .carousel{
+        width: 500px;
+        img{
+            width: 500px;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .carousel{
+        width: 450px;
+        img{
+            width: 450px;
+        }
+    }
+}
+
+
+@media(max-width: 450px){
+    .carousel{
+        width: 400px;
+        img{
+            width: 400px;
+        }
+    }
+}
+
+
+@media(max-width: 400px){
+    .carousel{
+        width: 380px;
+        img{
+            width: 380px;
+        }
     }
 }
