@@ -53,7 +53,12 @@ export function CardsBook() {
       id: 2,
       title: "CAPONATA DE BERINGELA",
       image: "./img/laponata.png",
-      description: "teste",
+      p: ". 1 pimentão verde em cubos, 1 pimentão vermelho em cubos, 1 pimentão amarelo em cubos",
+      pone: ". 1 cebola em cubos, 2 berinjelas sem casca, raladas, meia xícara (chá) de uvas-passas",
+      ptwo: "meia xícara (chá) de azeitonas sem caroço, cortadas ao meio",
+      pthree: ". 1 colher (chá) de sal, 1 colher (chá) de orégano, 1 xícara (chá) de azeite",
+      pfour: "MODO DE PREPARO:",
+      pfive: `Em uma assadeira misture todos os ingredientes.  Leve para assar em forno médio (180°C) preaquecido, por cerca de 1 hora e 30 minutos, mexendo a cada 30 minutos. Retire do forno, espere esfriar e coloque na geladeira. Sirva gelado.`
     },
     {
       id: 3,
