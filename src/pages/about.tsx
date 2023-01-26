@@ -58,10 +58,10 @@ export const getStaticProps: GetStaticProps = async () => {
         five:post.data.five.url,
 
         textone:post.data.textone[0].text,
-        texttwo:post.data.textone[0].text,
-        textthree:post.data.textone[0].text,
-        textfour:post.data.textone[0].text,
-        textfive:post.data.textone[0].text
+        texttwo:post.data.texttwo[0].text,
+        textthree:post.data.textthree[0].text,
+        textfour:post.data.textfour[0].text,
+        textfive:post.data.textfive[0].text
       };
     });
        return{
