@@ -17,7 +17,7 @@ export function ContentOne({ contentone }: PostProps) {
     <div className={styles.main}>
       <div className={styles.content}>
         <h1>
-          Há 23 anos proporcionando
+          Há 24 anos proporcionando
           <br />o que há de
         </h1>
         <h3>melhor</h3>

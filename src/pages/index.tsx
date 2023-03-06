@@ -13,6 +13,10 @@ import Prismic from "@prismicio/client"
 import { Cookie } from "../components/Cookies"
 import { Ofertas } from "../components/Encarte"
 
+import ReactGa from "react-ga"
+
+ReactGa.initialize('G-YNVHGNBNGN')
+
 type Posts = {
   id: string;
   banner: string;

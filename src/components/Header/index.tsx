@@ -110,9 +110,6 @@ export function Header() {
               <Link href={"/stores"}>Lojas</Link>
               <Link href={"/books"}>Livro de Receitas</Link>
               <span className={styles.test}>
-                <Link href={"/"}>
-                  Área gourmet
-                </Link>
                 <span className={styles.teste}>
                   <Link href={"/butchers"}>Açougue</Link>
                   <Link href={"/bakers"}>Padaria</Link>
