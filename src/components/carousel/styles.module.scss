@@ -1,62 +1,60 @@
-.carousel {
-    margin: 0 auto;
-    width: 800px;
-
-    img {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        padding: 0.3rem;
-    }
+.body {
+    background-color: var(--gray-50);
 }
 
 .global {
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: var(--white);
+    align-content: center;
+    margin: 0 auto;
+    width: 800px;
+    padding-bottom: 5rem;
 
-    img {
-        width: 600px;
+    .carousel {
+        img {
+            width: 800px;
+            height: 400px;
+        }
     }
+    
+}
 
-    .content {
+@media(max-width: 1000px){
+    .global {
+        width: 600px;
+        .carousel {
+            img {
+                width: 600px;
+                height: 350px;
+            }
+        }
+        
+    }
+}
+
+
+@media(max-width: 700px){
+    .global {
         width: 400px;
-
-        h1 {
-            font-size: 3rem;
-            line-height: 2.5rem;
-            font-weight: 100;
-
-            span {
-                color: var(--gray-900);
+        .carousel {
+            img {
+                width: 400px;
+                height: 300px;
             }
         }
+        
+    }
+}
 
-        .text {
-            margin: 3rem 0rem;
-
-            p {
-                font-size: 1.4rem;
-
-                span {
-                    color: var(--gray-900);
-                }
+@media(max-width: 500px){
+    .global {
+        width: 350px;
+        .carousel {
+            img {
+                width: 350px;
+                height: 250px;
             }
         }
-
-        .link {
-            text-align: center;
-            background-color: var(--gray-900);
-            width: 350px;
-            font-size: 1.5rem;
-            border-radius: 18px;
-            padding: 0.8rem;
-        }
-
-        a {
-            font-weight: bold;
-        }
-
+        
     }
 }
