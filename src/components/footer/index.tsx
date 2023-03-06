@@ -1,70 +1,30 @@
-
-import Link from "next/link";
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss'
 
 export function Footer() {
-  return (
-    <div className={styles.footer}>
-      <div className={styles.logo}>
-        <img src="/images/logo.png" alt="" />
-      </div>
-      <div className={styles.content}>
-        <Link href={"/about"} target={"_blank"}>Sobre nós</Link>
-        <Link href={"/stores"} target={"_blank"}>Nossas lojas</Link>
-        <a>Sobre cookies</a>
-        <a>DPO</a>
-      </div>
+    return (
+        <>
 
-      <div className={styles.information}>
-        <h1>Retirada e entregas</h1>
-        <h2>Horário de atendimento</h2>
-        <h1>Política de privacidade</h1>
-      </div>
+            <div className={styles.global}>
+                <div className={styles.container}>
+                    <img src="./img/selo.png" alt="" />
+                    <div className={styles.content}>
+                        <h1>GARANTIA INCONDICIONAL</h1>
+                        <p>O app Gymnamic é risco zero, você terá 7 dias</p>
+                        <p>para experimentar, é nosso compromisso com a </p>
+                        <p>sua satisfação total, se não gostar do app é só</p>
+                        <p>mandar um email para solicitar 100% de reembolso.</p>
+                    </div>
+                </div>
 
-      <div className={styles.payment}>
-        <h1>Forma de pagamentos</h1>
-        <div className={styles.card}>
-          <img src="/icon/iconOne.png" alt="" />
-          <img src="/icon/iconTwo.png" alt="" />
-          <img src="/icon/iconThree.png" alt="" />
-          <img src="/icon/iconFour.png" alt="" />
-          <img src="/icon/iconFive.png" alt="" />
-        </div>
-        <div className={styles.card}>
-          <img src="/icon/iconSex.png" alt="" />
-          <img className={styles.icon} src="/icon/iconSeven.png" alt="" />
-          <img src="/icon/iconEight.png" alt="" />
-          <img className={styles.icon} src="/icon/iconNine.png" alt="" />
-        </div>
-      </div>
+                <div className={styles.text}>
+                    <h1>DÚVIDAS FREQUENTES</h1>
+                    <h2>O QUE É O GYMNAMIC?  <span>+</span></h2>
+                    <h2>COMO É O ACESSO?  <span>+</span></h2>
+                    <h2>QUANTOS DIAS EU TENHO PARA EXPERIMENTAR?  <span>+</span></h2>
+                    <h2>QUANTO TEMPO TENHO DE ACESSO?  <span>+</span></h2>
+                </div>
 
-      <div className={styles.nets}>
-        <h1>SIGA-NOS</h1>
-        <div className={styles.netCard}>
-          <div>
-            <Link href="https://www.instagram.com/superivasko/"
-              target={"_blank"}
-              rel="noreferrer">
-            <img src="/assets/insta.png" alt="" />
-            </Link>
-          </div>
-          <div>
-          <Link href="https://www.facebook.com/superivasko/"
-              target={"_blank"}
-              rel="noreferrer"> 
-            <img src="/assets/face.png" alt="" />
-            </Link>
-          </div>
-          
-          <div>
-            <Link href="https://br.linkedin.com/company/grupoivasko"
-              target={"_blank"}
-              rel="noreferrer"> 
-            <img src="/assets/linkedin.png" alt="" />
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+            </div>
+        </>
+    )
 }

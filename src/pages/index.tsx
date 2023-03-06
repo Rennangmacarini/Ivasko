@@ -1,12 +1,13 @@
 
-import { Banner } from "../components/Banner"
-import { ContentOne } from "../components/ContentOne"
-import { ContentThree } from "../components/ContentThree"
-import { ContentTwo } from "../components/ContentTwo"
-import { Video } from "../components/filme"
-import { Footer } from "../components/footer"
-import { Header } from "../components/Header"
+import {Carousel} from "../components/Carousel";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+import { Main } from "../components/Main";
+import { Section } from "../components/Section";
+import { SectionOne } from "../components/SectionOne";
+import { SectionTwo } from "../components/SectionTwo";
 
+<<<<<<< HEAD
 import { GetStaticProps } from "next"
 import { getPrismicClient } from "../services/prismic"
 import Prismic from "@prismicio/client"
@@ -75,3 +76,18 @@ export const getStaticProps: GetStaticProps = async () => {
       }
      }
 } 
+=======
+export default function Content() {
+    return (
+        <>
+            <Header />
+            <Section />
+            <Carousel/>
+            <Main/>
+            <SectionOne/>
+            <SectionTwo/>
+            <Footer/>
+        </>
+    )
+}
+>>>>>>> 6e7f864263021792495e9398b414791fd5617c4b
