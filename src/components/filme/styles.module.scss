@@ -1,0 +1,42 @@
+.video {
+    margin: 5rem;
+    text-align: center;
+}
+
+.iframe {
+    text-align: center;
+    width: 800px;
+    height: 400px;
+}
+
+@media(max-width: 1200px){
+    .iframe {
+        width: 600px;
+        height: 340px;
+    }
+}
+
+
+@media(max-width: 700px){
+    .video {
+        margin: 5rem 0rem; 
+    }
+    .iframe {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@media(max-width: 600px){
+    .iframe {
+        width: 400px;
+        height: 220px;
+    }
+}
+
+@media(max-width: 500px){
+    .iframe {
+        width: 380px;
+        height: 200px;
+    }
+}
