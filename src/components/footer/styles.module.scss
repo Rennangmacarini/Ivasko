@@ -1,0 +1,141 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    font-family: 'Exo 2' !important;
+    background-color: var(--gray-500);
+    padding: 3rem 0rem;
+    color: var(--white);
+
+    .logo {
+        img {
+            width: 250px;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+
+
+        a {
+            font-size: 1.3rem;
+        }
+
+        a:hover{
+            color: rgb(111, 110, 110);
+        }
+    }
+
+    .information {
+        margin-top: -2rem;
+        h1, a{
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        a:hover{
+            color: rgb(111, 110, 110);
+        }
+    }
+
+
+    .payment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.2rem;
+
+            img {
+                width: 40px;
+            }
+
+            .icon {
+                width: 30px;
+            }
+
+        }
+
+
+
+    }
+
+
+    .nets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-left: 4rem;
+        border-left: 5px solid var(--gray-300);
+        border-radius: 8px;
+
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        .netCard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            div {
+                padding: 0.6rem 0.4rem;
+                background-color: var(--gray-300);
+                border-radius: 8px;
+
+                img {
+                    width: 25px;
+                }
+            }
+        }
+
+
+
+    }
+
+}
+
+@media(max-width: 1700px) {
+    .footer {
+        gap: 2rem;
+    }
+
+}
+
+@media(max-width: 1200px) {
+    .footer {
+        flex-direction: column;
+
+        .information{
+            margin-top: 0rem;
+        }
+    }
+
+}
+
+
+@media(max-width: 700px) {
+    .footer {
+        flex-direction: column;
+
+        .nets {
+            padding-left: 2rem;
+            margin-right: 2rem;
+        }
+    }
+}

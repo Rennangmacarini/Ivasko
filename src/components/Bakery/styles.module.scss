@@ -1,0 +1,258 @@
+.body {
+    background-color: var(--gray-50);
+}
+
+.banner {
+    img {
+        width: 100%;
+        margin-top: 4rem;
+    }
+}
+
+.global {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 5rem 0rem;
+
+    .content {
+        font-family: 'Exo 2' !important;
+
+        h1 {
+            padding: 1rem 0rem;
+            width: 300px;
+            font-size: 2.5rem;
+            text-align: center;
+            font-weight: 100;
+            color: var(--white);
+            background-color: var(--gray-900);
+
+        }
+
+        h3 {
+            font-family: minhaFonte !important;
+            font-size: 7rem;
+            margin-top: -2rem;
+            font-weight: 400;
+            color: var(--gray-850);
+        }
+
+        p {
+            width: 400px;
+            font-size: 1.5rem;
+            font-weight: 100;
+            text-align: justify;
+
+        }
+    }
+
+    img {
+        width: 500px;
+    }
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+
+    .text {
+        font-family: 'Exo 2' !important;
+        width: 500px;
+
+        h1 {
+            padding: 1rem 0.3rem;
+            width: 350px;
+            font-size: 2.5rem;
+            text-align: center;
+            font-weight: 100;
+            color: var(--white);
+            background-color: var(--gray-900);
+        }
+
+        h3 {
+            font-family: minhaFonte !important;
+            font-size: 7rem;
+            margin-top: -2.5rem;
+            font-weight: 400;
+            color: var(--gray-850);
+        }
+
+        p {
+            width: 400px;
+            font-size: 1.5rem;
+            font-weight: 100;
+            text-align: justify;
+        }
+    }
+
+    img {
+        width: 600px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .global {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .content {
+            text-align: center;
+
+            h1 {
+                margin: 0 auto;
+            }
+
+            p {
+                width: 500px;
+
+            }
+        }
+
+        img {
+            width: 400px;
+        }
+    }
+
+    .title {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 35rem;
+
+        .text {
+            font-family: 'Exo 2' !important;
+            width: 100%;
+            text-align: center;
+
+            h1 {
+                margin: 0 auto;
+            }
+
+            h3 {
+                margin: 0 auto;
+                margin-top: -2.5rem;
+            }
+
+            p {
+                margin: 0 auto;
+                width: 400px;
+            }
+        }
+
+        img {
+            position: absolute;
+            margin-top: 60rem;
+            width: 500px;
+        }
+    }
+
+}
+
+@media(max-width: 700px) {
+    .banner {
+        img {
+            width: 100%;
+            margin-top: 3.8rem;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .global {
+        .content {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 5rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                width: 350px;
+
+            }
+        }
+
+        img {
+            width: 400px;
+        }
+    }
+
+
+
+
+    .title {
+        padding-bottom: 30rem;
+
+        .text {
+            h1 {
+                margin: 0 auto;
+                font-size: 2rem;
+            }
+
+            h3 {
+                margin: 0 auto;
+                margin-top: -2.5rem;
+                font-size: 6rem;
+            }
+
+            p {
+                margin: 0 auto;
+                font-size: 1.3rem;
+                width: 400px;
+            }
+        }
+
+        img {
+            position: absolute;
+            margin-top: 55rem;
+            width: 400px;
+        }
+    }
+
+}
+
+@media(max-width: 500px) {
+    .global {
+        .content {
+            p {
+                width: 300px;
+
+            }
+        }
+
+        img {
+            width: 300px;
+        }
+    }
+
+    .title {
+        padding-bottom: 25rem;
+
+        .text {
+            h1 {
+                margin: 0 auto;
+            }
+
+            h3 {
+                margin: 0 auto;
+                margin-top: -2.5rem;
+            }
+
+            p {
+                margin: 0 auto;
+                width: 300px;
+            }
+        }
+
+        img {
+            position: absolute;
+            margin-top: 50rem;
+            width: 350px;
+        }
+    }
+
+}

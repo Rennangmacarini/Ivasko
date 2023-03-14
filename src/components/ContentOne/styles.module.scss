@@ -1,0 +1,131 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0rem 3rem;
+
+    .content {
+        width: 600px;
+        margin-top: -4rem;
+
+        h1 {
+            padding: 1rem 0rem;
+            font-weight: 200;
+            font-size: 2.5rem;
+            text-align: center;
+            color: var(--white);
+            background-color: var(--gray-900);
+            font-family: 'Exo 2' !important;
+        }
+
+        h3 {
+            font-family: minhaFonte !important;
+            font-size: 7rem;
+            font-weight: 400;
+            text-align: center;
+            color: var(--gray-850);
+
+            margin-top: -2rem;
+        }
+
+        p {
+            width: 550px;
+            font-size: 1.5rem;
+            font-weight: 200;
+            text-align: justify;
+            font-family: 'Exo 2' !important;
+        }
+    }
+
+    .imagem {
+        img {
+            width: 600px;
+            margin-left: -2rem;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .main {
+        flex-direction: column;
+
+        .content {
+            margin-bottom: 4rem;
+
+            P {
+                margin: 0 auto;
+            }
+        }
+
+        .imagem {
+            img {
+                width: 600px;
+                margin-left: 0rem;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 700px) {
+    .main {
+        .content {
+            width: 500px;
+            margin-bottom: 4rem;
+
+            P {
+                width: 400px;
+            }
+        }
+
+        .imagem {
+            img {
+                width: 500px;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 600px) {
+    .main {
+        margin-bottom: -30rem;
+        .content {
+            width: 400px;
+            h3 {
+                margin-top: -3rem;
+            }
+            P {
+                margin-top: 20rem;
+                width: 350px;
+            }
+        }
+
+        .imagem {
+            margin-top: -32rem;
+            img {
+                margin-top: -10rem;
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .main {
+        .content {
+            width: 350px;
+            P {
+                margin-top: 18rem;
+                width: 300px;
+            }
+        }
+
+        .imagem {
+            margin-top: -33rem;
+            img {
+                width: 350px;
+            }
+        }
+    }
+}
