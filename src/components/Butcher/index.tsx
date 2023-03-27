@@ -34,7 +34,7 @@ export function Butcher() {
       <div className={styles.cardImg}>
         <div className={styles.card}>
           <div>
-            <img src={"./images/costela.png"} alt="" />
+            <img src={"./images/costminga.png"} alt="" />
             <div>
               <h1>Costela</h1>
               <p>Espeto, grelha ou forno</p>
@@ -57,25 +57,25 @@ export function Butcher() {
             </div>
           </div>
           <div>
-            <img src={"./images/picanha.png"} alt="" />
+            <img src={"./images/filemignon.png"} alt="" />
             <div>
-              <h1>Picanha</h1>
+              <h1>File mignon</h1>
               <p>Grelha ou espeto</p>
             </div>
           </div>
 
           <div>
-            <img src={"./images/mignon.png"} alt="" />
+            <img src={"./images/filesete.png"} alt="" />
             <div>
-              <h1>Mignon</h1>
-              <p>Grelha ou espeto</p>
+              <h1>File sete</h1>
+              <p>Grelha</p>
             </div>
           </div>
 
           <div>
-            <img src={"./images/cordeiro.png"} alt="" />
+            <img src={"./images/costpeito.png"} alt="" />
             <div>
-              <h1>Cordeiro</h1>
+              <h1>Costela do peito</h1>
               <p>Grelha ou espeto</p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export function Butcher() {
 
         <div className={styles.cardLast}>
           <div>
-            <img src={"./images/pernil.png"} alt="" />
+          <img src={"./images/pernil.png"} alt="" />
             <div>
               <h1>Pernil</h1>
               <p>Espeto, grelha ou forno</p>
@@ -91,9 +91,17 @@ export function Butcher() {
           </div>
 
           <div>
-            <img src={"./images/linguica.png"} alt="" />
+            <img src={"./images/paleta.png"} alt="" />
             <div>
-              <h1>Linguiça</h1>
+              <h1>Paleta</h1>
+              <p>Grelha ou espeto</p>
+            </div>
+          </div>
+
+          <div>
+            <img src={"./images/costporco.png"} alt="" />
+            <div>
+              <h1>Costelinha</h1>
               <p>Grelha ou espeto</p>
             </div>
           </div>

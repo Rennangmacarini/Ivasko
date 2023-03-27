@@ -30,35 +30,35 @@ export function Carousel() {
             <div className={styles.carousel}>
               <img
                 className={"keen-slider__slide number-slide1"}
-                src={"./images/carousel.jpg"}
+                src={"./images/carousel1.png"}
                 alt=""
               />
             </div>
             <div className={styles.carousel}>
               <img
                 className={"keen-slider__slide number-slide2"}
-                src={"./images/carousel1.jpg"}
+                src={"./images/carousel2.png"}
                 alt=""
               />
             </div>
             <div className={styles.carousel}>
               <img
                 className={"keen-slider__slide number-slide3"}
-                src={"./images/carousel2.jpg"}
+                src={"./images/carousel3.png"}
                 alt=""
               />
             </div>
             <div className={styles.carousel}>
               <img
                 className={"keen-slider__slide number-slide4"}
-                src={"./images/carousel1.jpg"}
+                src={"./images/carousel4.png"}
                 alt=""
               />
             </div>
             <div className={styles.carousel}>
               <img
                 className={"keen-slider__slide number-slide4"}
-                src={"./images/carousel2.jpg"}
+                src={"./images/carousel1.png"}
                 alt=""
               />
             </div>

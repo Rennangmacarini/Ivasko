@@ -115,7 +115,6 @@
             border-bottom: 2px solid var(--gray-300);
             padding: 1rem;
             width: 260px;
-            height: 150px;
         }
 
 
@@ -268,8 +267,9 @@
         }
 
         .cardLast {
+            display: grid;
+            grid-template-columns: 0.3fr 0.3fr;
             gap: 2rem;
-
             img {
                 width: 220px;
                 height: 130px;
